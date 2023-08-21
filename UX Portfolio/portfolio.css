@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #dcc5a6;
+    margin: 0 auto;
+    width: 100%;
+    /*background-image: "woodcut.jpg";*/
+    /*padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;*/
+  }
+
+  header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99.999%;
+  }
+
+  .item {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: 75% auto;
+	background-position: left top;
+	pointer-events: none;
+  }
+
+  #logo {
+    top: 15px;
+    left: 15px;
+  }
+
+
+  
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+
+  article img {
+    -webkit-flex: 4;
+    -ms-flex: 4;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  footer li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: #818181;
+  }
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
