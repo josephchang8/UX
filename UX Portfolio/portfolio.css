@@ -10,6 +10,11 @@
     font-size: 36px;
   }
 
+  article h1 {
+    margin-left: 275px;
+    margin-right: 275px;
+  }
+
   h2 {
     font-size: 32px;
   }
@@ -18,8 +23,23 @@
     font-size: 26px;
   }
 
+  article h3 {
+    margin-left: 275px;
+  }
+
   p {
     font-size: 16px;
+  }
+
+  article p {
+    margin-left: 275px;
+    margin-right: 275px;
+  }
+
+  article strong {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 315px;
   }
   
   /* Style the header */
@@ -82,7 +102,7 @@
     -webkit-flex: 3;
     -ms-flex: 3;
     flex: 3;
-    background-color: #f1f1f1;
+    background-color: #faebcc;
     padding: 10px;
   }
 
@@ -97,7 +117,7 @@
   
   /* Style the footer */
   footer {
-    background-color: #777;
+    background-color: #9b9c8c;
     padding: 10px;
     text-align: center;
     color: white;
